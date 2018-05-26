@@ -8,13 +8,25 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Scrolling Nav - Start Bootstrap Template</title>
+    <title>Privacy Project User Study</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <script type="text/javascript">
+      function myCheckBoxAction(checkbox)
+      {
+    if (checkbox.checked)
+    {
+        document.getElementById("myDiv").style.visibility='visible';
+    } else {
+      document.getElementById("myDiv").style.visibility='hidden';
+    }
+  }
+    </script>
 
   </head>
 
@@ -23,20 +35,26 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Privacy Project User Study</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="#purpose">Purpose</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+              <a class="nav-link js-scroll-trigger" href="#howto">How To</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#data">Data</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#uninstall">Uninstall</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#downloads">Downloads</a>
             </li>
           </ul>
         </div>
@@ -45,54 +63,194 @@
 
     <header class="bg-primary text-white">
       <div class="container text-center">
-        <h1>Welcome to Scrolling Nav</h1>
-        <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
+        <h1>Privacy Project User Study</h1>
+        <p class="lead">Stony Brook University</p>
       </div>
     </header>
 
-    <section id="about">
+    <section id="purpose">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>About this page</h2>
-            <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
-            <ul>
-              <li>Clickable nav links that smooth scroll to page sections</li>
-              <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-              <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-              <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-            </ul>
+            <h2>Purpose</h2>
+            <p class="lead">The purpose of this user study is to evaluate how well our system can determine your view towards various entities (people, places, organizations, etc.) based on the articles you read. Our system will periodically extract articles from your history and process them locally on your computer. <strong>We do not receive any of this information.</strong> </p>
+            <p class="lead">
+            You will then submit a survey each week of how well the system identifies your view towards certain entities. No personal information will be sent in the survey, only the scores of how well the system performs will be sent. </p>
+            <p class="lead">
+            The ultimate goal is to develop a local application that can inform a user of what can be learned from their personal information. The application could then recommend steps to preserve neutrality/anonymity.    </p>
+            
           </div>
         </div>
       </div>
     </section>
 
-    <section id="services" class="bg-light">
+    <section id="howto" class="bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Services we offer</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+            <h2>How to Participate</h2>
+            <p class="lead">To participate, you must be at least 18 years of age. You will also need to use Google Chrome on your Mac or Windows PC and have your chrome history available. If your history is already cleared, that is okay, just make sure not to clear it during the study period. <strong>We will not receive any of your history data</strong>, more details explained in the next section.</p>
+            <ol class="lead">
+              <li>Send us an email letting us know you would like to participate here.</li>
+              <li>Download the application from the Downloads Section at the bottom of the page and agree to the consent form.</li>
+              <li>Run the application. You must leave it running for the duration of the study. If you do close it, simply run the application again and the system will resume where it left off.</li>
+              <li>Send us a survey each week by opening the "Dashboard" and select "Start Survey". The survey will ask you to answer if our system correctly predicted your view towards various entities.</li>
+            </ol>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact">
+    <section id="data">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Contact us</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+            <h2>What Data will be Accessed?</h2>
+  
+            <p class="lead">When the application first launches it will create a folder in your home directory called "com.stony-brook.nlp.privacy-project". It will copy your chrome history to this folder and extract the articles from your history links periodically (the application should consume little CPU as it is designed to sleep often). The application will store all data in this folder and no where else. All data will be processed locally on your computer and <strong>no data will be sent to us.</strong></p>
+
+            <p class="lead">When you are ready to send us a survey for the week, you will press the "Open Dashboard" button which will open a web interface locally in your browser. From there you will press the "Start Survey" button and follow the instructions. We will receive the survey using a standard "Google Survey" form. No personal information will be sent, only the scores of how well the system performed. Furthermore, you will be able to see the data we will be receiving when you open the Google Survey.</p> 
+
+            
+
+
           </div>
         </div>
       </div>
     </section>
+
+    <section id="uninstall" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>How to Uninstall</h2>
+            <p class="lead">If at any moment you want to stop the study or you finished the study, then simply close the application and delete it. No additional processes run in the background. Lastly, delete the "com.stony-brook.nlp.privacy-project" in your home directory.</p> 
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section id="downloads"> 
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Downloads</h2>
+            <div class="form-group">
+              <p class="lead">You must agree to the consent form in order to download the application.</p>
+              <h5>Consent Form</h5>
+            <textarea class="form-control" rows="15" style="resize: none; min-width: 100%" rows="4" cols="50" readonly>
+1. WHAT IS THIS FORM?
+
+This form is called a Consent Form. It will give you information about the study so you can make an informed decision about participating in this research study.
+
+2. WHO IS ELIGIBLE TO PARTICIPATE?
+
+To participate, you should be at least 18 years of age and have an Android mobile phone and a Mac or Windows computer with a Chrome web browser.
+
+3. WHAT IS THE PURPOSE OF THIS STUDY?
+
+The purpose of our research study is to improve user privacy.
+
+News recommendation is an extremely popular service. However, users often given up their privacy to receive the recommendation. Existing recommendation systems collect all user data in order to provide recommendations. In order to address the privacy concerns, we are researching systems that can provide recommendations by processing data locally on the user's laptop. No data is stored at the server. Our goal in this study is to design algorithms which can best utilize user's data for recommendations, but can still be performed on a low-end machine.
+
+4. WHERE WILL THE STUDY TAKE PLACE AND FOR HOW LONG?
+
+This is a completely offline study. We ask that you provide us feedback for 1 month.
+
+5. WHAT WILL I BE ASKED TO DO?
+
+If you agree to take part in this study, you will be asked to do the following: 
+
+1. Download and install the application on your mobile phone and on your personal computer. 
+
+2. Read and sign this consent form on the mobile application. 
+
+3. Provide your username. This can be any username. Also provide a password (which will not be transferred to us) to encrypt any data transfer between your phone and your laptop. Be sure to provide the same username and password on both your phone and your laptop. 
+
+4. Provide feedback to the recommendations 
+    a. Recommendations pop up on your phone periodically. 
+    b. Swipe right if you find the recommendation relevant, left if you dont. 
+6. CAN I STOP BEING IN THE STUDY?
+
+If you agree to be in the study, but later change your mind, you may drop out at any time by uninstalling the application. In addition, you can erase all your data that was collected during the course of the study.
+
+7. WILL YOU COLLECT ANY PERSONAL INFORMATION OR SENSITIVE INFORMATION DURING THE STUDY?
+
+This study does not log any personally identifiable information including phone number, IMEI number, personal contacts, etc. 
+The software works on the following pieces of data on your mobile phone: 
+    a. Browser history. 
+    b. Facebook and Twitter feeds. 
+The data from the mobile phone will be transferred to your laptop in encrypted form; the recommendation algorithm runs on the laptop. Similarly, the recommendations from the laptop is transferred to the mobile through the server, but is once again encrypted. The server deletes the data once the transfer is complete. 
+
+We note that signing into cloud services such as Google, Facebook, and Twitter, means that these services have access to user data. Specifically, if you are logged into any Google services, Google will track your browser history and automatically provide recommendations. We are only providing these recommendations to you to get feedback. 
+
+Researchers would only look at the feedback given by users. The feedback only contains the information such as "Out of the 30 recommendations, user X finds recommendations 1, 4, and 5 to be relevant.". The content of the recommendation is not available. The server also has information about which of the recommendations were PrIA recommended and which were generated by Google’s recommendation system 
+
+8. WILL I RECEIVE ANY PAYMENT FOR TAKING PART IN THE STUDY?
+
+No there are no monetary benefits.
+
+9. WHAT ARE MY RISKS?
+
+We are taking several measures to ensure your risks are minimized:
+
+     a. No personally identifiable information is logged. This includes your phone number, IMEI number, IP address etc.
+
+     b. The researchers would not look at any of the user's data. Recommendations are done purely by our machine algorithm.
+
+     c. Our recommender system runs directly on the user's laptops which sends the recommendation to the user's mobile through our server. All data transfer between the laptop and the phone are encrypted.
+
+     d. You can stop participating in the study at any time.
+
+     e. The study server is password protected and only the study researchers can access this information.
+
+     f. We note that, by signing into Gmail and Google, Google will use your browsing history to generate news recommendation. We simply present this news recommendation to you to receive feedback.
+
+
+
+10. WILL THE COLLECTED DATA BE RELEASED?
+
+No, the collected data will not be released.
+
+11. HOW LONG WILL THE STUDY LAST?
+
+The study lasts 1 month. We will provide you detailed instructions on how to uninstall the tool from your phone and personal computer after the study is completed.
+
+12. WHAT IF I HAVE QUESTIONS?
+
+Take as long as you like before you make a decision. We will be happy to answer any questions you have about this study. If you have further questions about this project or if you have a research-related problem, please contact the researchers. Please note that confidentiality cannot be guaranteed for communication sent via e-mail.
+
+13. SUBJECT STATEMENT OF VOLUNTARY CONSENT
+
+I have read this form and decided that I will participate in the project described above. The general purposes and particulars of the study as well as possible hazards and inconveniences have been explained to my satisfaction. I understand that I can withdraw at any time.
+ </textarea></div>
+ 
+ <div class="form-check">
+ <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="myCheckBoxAction(this)">
+ <label class="form-check-label" for="defaultCheck1">
+    I hereby acknowledge that I have read and understood the terms and conditions as provided in the consent form.
+  </label>
+</div>
+
+<div style="visibility: hidden; text-align: center;" id = "myDiv">
+  <br>
+            <h4>macOS</h4>
+            <a href="https://drive.google.com/file/d/19hTC570YUV59BUcPRWj9rwjqLvZwfszN/view?usp=sharing" class="btn btn-primary" role="button">Download</a>
+            <br>
+            <br>
+            <h4>Windows</h4>
+            <a href="#link" class="btn btn-primary" role="button">Download</a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+        <p class="m-0 text-center text-white">Privacy Project User Study — Stony Brook University</p>
       </div>
       <!-- /.container -->
     </footer>
