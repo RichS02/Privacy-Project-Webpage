@@ -145,46 +145,39 @@ This form is called a Consent Form. It will give you information about the study
 
 2. WHO IS ELIGIBLE TO PARTICIPATE?
 
-To participate, you should be at least 18 years of age and have an Android mobile phone and a Mac or Windows computer with a Chrome web browser.
+To participate, you should be at least 18 years of age and have a Mac or Windows computer with the Chrome web browser installed.
 
 3. WHAT IS THE PURPOSE OF THIS STUDY?
 
 The purpose of our research study is to improve user privacy.
 
-News recommendation is an extremely popular service. However, users often given up their privacy to receive the recommendation. Existing recommendation systems collect all user data in order to provide recommendations. In order to address the privacy concerns, we are researching systems that can provide recommendations by processing data locally on the user's laptop. No data is stored at the server. Our goal in this study is to design algorithms which can best utilize user's data for recommendations, but can still be performed on a low-end machine.
+The purpose of this user study is to evaluate how well our system can determine your view towards various entities (people, places, organizations, etc.) based on the articles you read. The ultimate goal is to develop a local application that can inform a user of what can be learned from their personal information. The application could then recommend steps to preserve neutrality/anonymity.
 
 4. WHERE WILL THE STUDY TAKE PLACE AND FOR HOW LONG?
 
-This is a completely offline study. We ask that you provide us feedback for 1 month.
+This is a completely offline study. We ask that you provide us feedback each week for 1 month through the use of a survey.
 
 5. WHAT WILL I BE ASKED TO DO?
 
 If you agree to take part in this study, you will be asked to do the following: 
 
-1. Download and install the application on your mobile phone and on your personal computer. 
+1. Send us an email to (X) letting us know you would like to participate so we can keep track of who is participating.
 
-2. Read and sign this consent form on the mobile application. 
+2. Read and agree to this consent form. 
 
-3. Provide your username. This can be any username. Also provide a password (which will not be transferred to us) to encrypt any data transfer between your phone and your laptop. Be sure to provide the same username and password on both your phone and your laptop. 
+3. Download and install the application on your personal computer. 
 
-4. Provide feedback to the recommendations 
-    a. Recommendations pop up on your phone periodically. 
-    b. Swipe right if you find the recommendation relevant, left if you dont. 
+4. Provide feedback each week by pressing the "Start Survey" button. We will receive the survey using a standard "Google Survey" form. No personal information will be sent, only the scores of how well the system performed. Furthermore, you will be able to see the data we will be receiving when you open the Google Survey. 
+
 6. CAN I STOP BEING IN THE STUDY?
 
-If you agree to be in the study, but later change your mind, you may drop out at any time by uninstalling the application. In addition, you can erase all your data that was collected during the course of the study.
+If you agree to be in the study, but later change your mind, you may drop out at any time by closing the application and deleting it. Lastly, delete the "com.stony-brook.nlp.privacy-project" in your home directory. You should also email us so we know that you are no longer participating.
 
 7. WILL YOU COLLECT ANY PERSONAL INFORMATION OR SENSITIVE INFORMATION DURING THE STUDY?
 
-This study does not log any personally identifiable information including phone number, IMEI number, personal contacts, etc. 
-The software works on the following pieces of data on your mobile phone: 
-    a. Browser history. 
-    b. Facebook and Twitter feeds. 
-The data from the mobile phone will be transferred to your laptop in encrypted form; the recommendation algorithm runs on the laptop. Similarly, the recommendations from the laptop is transferred to the mobile through the server, but is once again encrypted. The server deletes the data once the transfer is complete. 
+No personal or sensitive information will be collected. When the application first launches it will create a folder in your home directory called "com.stony-brook.nlp.privacy-project". It will copy your chrome history to this folder and extract the articles from your history links periodically. The application will store all data in this folder and nowhere else. All data will be processed LOCALLY on your own computer and NO DATA WILL BE SENT TO US.
 
-We note that signing into cloud services such as Google, Facebook, and Twitter, means that these services have access to user data. Specifically, if you are logged into any Google services, Google will track your browser history and automatically provide recommendations. We are only providing these recommendations to you to get feedback. 
-
-Researchers would only look at the feedback given by users. The feedback only contains the information such as "Out of the 30 recommendations, user X finds recommendations 1, 4, and 5 to be relevant.". The content of the recommendation is not available. The server also has information about which of the recommendations were PrIA recommended and which were generated by Google’s recommendation system 
+When you are ready to send us a survey for the week, you will press the "Open Dashboard" button which will open a web interface locally in your browser. From there you will press the "Start Survey" button and follow the instructions. We will receive the survey using a standard "Google Survey" form. No personal information will be sent, only the scores of how well the system performed. Furthermore, you will be able to see the data we will be receiving when you open the Google Survey.
 
 8. WILL I RECEIVE ANY PAYMENT FOR TAKING PART IN THE STUDY?
 
@@ -194,35 +187,25 @@ No there are no monetary benefits.
 
 We are taking several measures to ensure your risks are minimized:
 
-     a. No personally identifiable information is logged. This includes your phone number, IMEI number, IP address etc.
+     a. The system handles all processing on your own computer. Articles will be extracted on your own computer from the URLs in your history. No data is sent to us other than the survey which you will manually submit each week.
 
-     b. The researchers would not look at any of the user's data. Recommendations are done purely by our machine algorithm.
+     b. The survey will ask you to answer if our system correctly predicted your view towards various entities. You will then submit the scores of the system through the use of a Google Form. No personal information will be sent, only the scores of how well the system performed. Furthermore, you will be able to see the data we will be receiving when you open the Google Survey.
 
-     c. Our recommender system runs directly on the user's laptops which sends the recommendation to the user's mobile through our server. All data transfer between the laptop and the phone are encrypted.
+     c. You can stop participating in the study at any time and the application is very easy to stop and uninstall.
 
-     d. You can stop participating in the study at any time.
+     d. The application runs at the user-level and does not run as a service in the background, so you can easily tell that the system is running. It also sleeps often to consume fewer CPU resources. 
 
-     e. The study server is password protected and only the study researchers can access this information.
+10. HOW LONG WILL THE STUDY LAST?
 
-     f. We note that, by signing into Gmail and Google, Google will use your browsing history to generate news recommendation. We simply present this news recommendation to you to receive feedback.
+The study lasts 1 month. You will need to send us a survey each week using the "Start Survey" button. At the end of the survey, simply close and delete the application and delete the "com.stony-brook.nlp.privacy-project" in your home directory. You should also email us so that we know that you are finished with the study.
 
+11. WHAT IF I HAVE QUESTIONS?
 
+Take as long as you like before you make a decision. We will be happy to answer any questions you have about this study. If you have further questions about this project or if you have a research-related problem, please contact the researchers at X.
 
-10. WILL THE COLLECTED DATA BE RELEASED?
+12. SUBJECT STATEMENT OF VOLUNTARY CONSENT
 
-No, the collected data will not be released.
-
-11. HOW LONG WILL THE STUDY LAST?
-
-The study lasts 1 month. We will provide you detailed instructions on how to uninstall the tool from your phone and personal computer after the study is completed.
-
-12. WHAT IF I HAVE QUESTIONS?
-
-Take as long as you like before you make a decision. We will be happy to answer any questions you have about this study. If you have further questions about this project or if you have a research-related problem, please contact the researchers. Please note that confidentiality cannot be guaranteed for communication sent via e-mail.
-
-13. SUBJECT STATEMENT OF VOLUNTARY CONSENT
-
-I have read this form and decided that I will participate in the project described above. The general purposes and particulars of the study as well as possible hazards and inconveniences have been explained to my satisfaction. I understand that I can withdraw at any time.
+I have read this form and decided that I will participate in the project described above. The general purposes and particulars of the study, as well as possible hazards and inconveniences, have been explained to my satisfaction. I understand that I can withdraw at any time.
  </textarea></div>
  
  <div class="form-check">
