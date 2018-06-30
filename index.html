@@ -73,11 +73,14 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>Purpose</h2>
-            <p class="lead">The purpose of this user study is to evaluate how well our system can determine your view towards various entities (people, places, organizations, etc.) based on the articles you read. Our system will periodically extract articles from your history and process them locally on your computer. <strong>We do not receive any of this information.</strong> </p>
+            <p class="lead">The purpose of this user study is to evaluate how well our system can determine your view towards various entities (people, places, organizations, etc.) based on the articles you read. Our system will periodically download articles from your history and process them locally on your computer. <strong>We do not receive any of this information.</strong> </p>
             <p class="lead">
             You will then submit a survey each week of how well the system identifies your view towards certain entities. No personal information will be sent in the survey, only the scores of how well the system performs will be sent. </p>
             <p class="lead">
             The ultimate goal is to develop a local application that can inform a user of what can be learned from their personal information. The application could then recommend steps to preserve neutrality/anonymity.    </p>
+            <p class="lead">
+              Our system is completely <a href="https://github.com/RichS02/PrivacyProjectApp">Open Source</a>. 
+            </p>
             
           </div>
         </div>
@@ -89,12 +92,13 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>How to Participate</h2>
-            <p class="lead">To participate, you must be at least 18 years of age. You will also need to use Google Chrome on your Mac or Windows PC and have your chrome history available. If your history is already cleared, that is okay, just make sure not to clear it during the study period. <strong>We will not receive any of your history data</strong>, more details explained in the next section.</p>
+            <p class="lead">To participate, you must be at least 18 years of age and read news, blogs or any other articles online. You will also need to use Google Chrome on your Mac or Windows PC and have your chrome history available. If your history is already cleared, that is okay, just make sure not to clear it during the study period. You must also have an internet connection for the system to download the articles from your history. <strong>We will not receive any of your history data</strong>, more details explained in the next section.</p>
+            <h4>Steps to Get Started</h4>
             <ol class="lead">
               <li>Send us an email letting us know you would like to participate here.</li>
-              <li>Download the application from the Downloads Section at the bottom of the page and agree to the consent form.</li>
-              <li>Run the application. You must leave it running for the duration of the study. If you do close it, simply run the application again and the system will resume where it left off.</li>
-              <li>Send us a survey each week by opening the "Dashboard" and select "Start Survey". The survey will ask you to answer if our system correctly predicted your view towards various entities.</li>
+              <li>Download the application from the Downloads Section at the bottom of the page and read/agree to the consent form.</li>
+              <li>Run the application. You must leave it running for the duration of the study. If you do close it, simply run the application again and the system will resume where it left off.</li> <p>To run the application for Mac, just run the "privacy-project.app." For Windows, run the "privacy-project.exe" which can be found inside the folder (Note: Don't move anything inside the folder). <b>If you get a security warning, this is normal. You can right click and open the application to bypass this.</b></p>
+              <li>Send us a survey each week by opening the "Dashboard" and select "Start Survey." The survey will ask you to answer if our system correctly predicted your view towards various entities.</li>
             </ol>
           </div>
         </div>
@@ -107,7 +111,7 @@
           <div class="col-lg-8 mx-auto">
             <h2>What Data will be Accessed?</h2>
   
-            <p class="lead">When the application first launches it will create a folder in your home directory called "com.stony-brook.nlp.privacy-project". It will copy your chrome history to this folder and extract the articles from your history links periodically (the application should consume little CPU as it is designed to sleep often). The application will store all data in this folder and no where else. All data will be processed locally on your computer and <strong>no data will be sent to us.</strong></p>
+            <p class="lead">When the application first launches it will create a folder in your home directory called "com.stony-brook.nlp.privacy-project". It will copy your chrome history to this folder and download the articles from your history links periodically (the application should consume little CPU as it is designed to sleep often). The application will store all data in this folder and no where else. The application will require internet access to download the articles from your history. All data will be processed locally on your computer and <strong>no data will be sent to us.</strong></p>
 
             <p class="lead">When you are ready to send us a survey for the week, you will press the "Open Dashboard" button which will open a web interface locally in your browser. From there you will press the "Start Survey" button and follow the instructions. We will receive the survey using a standard "Google Survey" form. No personal information will be sent, only the scores of how well the system performed. Furthermore, you will be able to see the data we will be receiving when you open the Google Survey.</p> 
 
@@ -124,7 +128,22 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>How to Uninstall</h2>
-            <p class="lead">If at any moment you want to stop the study or you finished the study, then simply close the application and delete it. No additional processes run in the background. Lastly, delete the "com.stony-brook.nlp.privacy-project" in your home directory.</p> 
+            <p class="lead">If at any moment you want to stop the study or you finished the study, then simply press the "uninstall button" in the dashboard and then delete the original application that you downloaded at the start of the study.</p> 
+
+            <p class="lead">If you would like to verify everything was uninstalled, the following files should be deleted.</p>
+            <h4>macOS</h4>
+            <ol class="lead">
+              <li>/Users/<b>USER</b>/com.stony-brook.nlp.privacy-project</li>
+                <li>/Users/<b>USER</b>/Library/LaunchAgents/com.stony-brook.nlp.privacy-project-agent.plist</li>
+                <li>The privacy-project.app that you downloaded at the start of the study</li>
+            </ol>
+            <h4>Windows</h4>
+            <ol class="lead">
+              <li>C:\Users\<b>USER</b>\com.stony-brook.nlp.privacy-project</li>
+              <li>C:\Users\<b>USER</b>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\privacy-project</li>
+              <li>The privacy-project folder that you downloaded at the start of the study</li>
+            </ol>
+
           </div>
         </div>
       </div>
@@ -175,7 +194,7 @@ If you agree to be in the study, but later change your mind, you may drop out at
 
 7. WILL YOU COLLECT ANY PERSONAL INFORMATION OR SENSITIVE INFORMATION DURING THE STUDY?
 
-No personal or sensitive information will be collected. When the application first launches it will create a folder in your home directory called "com.stony-brook.nlp.privacy-project". It will copy your chrome history to this folder and extract the articles from your history links periodically. The application will store all data in this folder and nowhere else. All data will be processed LOCALLY on your own computer and NO DATA WILL BE SENT TO US.
+No personal or sensitive information will be collected. When the application first launches it will create a folder in your home directory called "com.stony-brook.nlp.privacy-project". It will copy your chrome history to this folder and download the articles from your history links periodically over the internet. The application will store all data in this folder and nowhere else. All data will be processed LOCALLY on your own computer and NO DATA WILL BE SENT TO US.
 
 When you are ready to send us a survey for the week, you will press the "Open Dashboard" button which will open a web interface locally in your browser. From there you will press the "Start Survey" button and follow the instructions. We will receive the survey using a standard "Google Survey" form. No personal information will be sent, only the scores of how well the system performed. Furthermore, you will be able to see the data we will be receiving when you open the Google Survey.
 
@@ -187,13 +206,15 @@ No there are no monetary benefits.
 
 We are taking several measures to ensure your risks are minimized:
 
-     a. The system handles all processing on your own computer. Articles will be extracted on your own computer from the URLs in your history. No data is sent to us other than the survey which you will manually submit each week.
+     a. The system handles all processing on your own computer. Articles will be downloaded from over the internet on your own computer from the URLs in your history. No data is sent to us other than the survey which you will manually submit each week.
 
      b. The survey will ask you to answer if our system correctly predicted your view towards various entities. You will then submit the scores of the system through the use of a Google Form. No personal information will be sent, only the scores of how well the system performed. Furthermore, you will be able to see the data we will be receiving when you open the Google Survey.
 
      c. You can stop participating in the study at any time and the application is very easy to stop and uninstall.
 
      d. The application runs at the user-level and does not run as a service in the background, so you can easily tell that the system is running. It also sleeps often to consume fewer CPU resources. 
+
+     e. Our system is completely open source and open for inspection.
 
 10. HOW LONG WILL THE STUDY LAST?
 
